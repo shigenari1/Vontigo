@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "web": "turbo run dev --filter=web",
+    "lint": "turbo run lint",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^2.8.8",
+    "prettier-plugin-svelte": "^2.10.1",
+    "turbo": "latest"
+  },
+  "browser": {
+    "crypto": false
+  },
+  "packageManager": "pnpm@7.27.1"
+}
